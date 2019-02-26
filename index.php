@@ -1,0 +1,1 @@
+Affichez les candidats  <?= $_GET['users'] ?>
