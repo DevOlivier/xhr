@@ -11,15 +11,18 @@
 <body>
     <div class="container mt-5">
         <h1>Requête Ajax </h1>
-        <h2>Affiche moi les users</h2>
+        <h2>Récupération Data Form</h2>
         
-        <li><a class="user" href="index.php?users=lien n°1">Lien 1</a></li>
-        <li><a class="user" href="index.php?users=lienn°2">Lien 2</a></li>
-        <div id="result"></div>
+            <form action="" id="form">
+                <input type='text' name="resultInput" id="resultInput" placeholder='Recherche ....'>
+                <input type="submit" value="Envoyer">
+            </form>
+            <div id="result"></div>
     </div>
 
     
 
     <script src="app.js"></script>
+    <script src="app2.js"></script>
 </body>
 </html>

@@ -1,5 +1,5 @@
 
-// en Ajax nous ne pouvons pas faire de requête sur des domaines différents, ex: 
+//en Ajax nous ne pouvons pas faire de requête sur des domaines différents
 var links = document.querySelectorAll('.user');
 var result = document.getElementById('result');
 for(var i = 0; i < links.length; i++){
@@ -7,7 +7,8 @@ for(var i = 0; i < links.length; i++){
 
     link.addEventListener('click' , function(e){
         e.preventDefault();
-        result.innerHTML = 'Chargement....'
+        //voir pour intégrer un spinner
+        result.innerHTML = 'Chargement....' 
         var xhr = new XMLHttpRequest();
         xhr.onreadystatechange = function () {
             
